@@ -7,9 +7,9 @@ require('dotenv').config();
 const Mentor = require('./models/mentor');
 const Student = require('./models/student')
 const app = express();
-// const port = process.env.PORT;
+const port = process.env.PORT;
 const DB = process.env.DB_URL
- const PORT = 3000 ;
+ // const PORT = 3000 ;
 // const DB_URL = ""
 app.use(bodyParser.json())
 // connecting mongoDB
