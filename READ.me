@@ -1,0 +1,72 @@
+# Mentor and Student Assigning with Database API
+
+# Rendered Information
+
+This document provides essential information about  Mentor and Student Assigning with Database API project, including relevant URLs and the last committed hash ID.
+
+## Render URL
+
+- **URL:** [https://assignmentor-iv89.onrender.com](https://assignmentor-iv89.onrender.com)
+
+## API Endpoints
+
+### Create a Mentor
+
+This API endpoint allows you to create a new Mentor with details Student details.
+
+**URL:** https://assignmentor-iv89.onrender.com/mentor
+
+**Method:** POST
+**schema** :  {
+     "name":"Manikandan"
+    }
+    
+
+### Create a Student
+
+This API endpoint allows you to create a new Student with details Mentors details.
+
+**URL:** https://assignmentor-iv89.onrender.com/student
+
+**Method:** POST
+**schema** :  {
+     "name":"Hariharasudhan"
+    }
+### Assign  a Student to Mentor 
+
+This API endpoint allows you to assign  a new Students to selected Mentor .
+
+**URL:** https://assignmentor-iv89.onrender.com/<mentorid>/assign
+
+**Method:** POST
+**schema** :  {
+     "students" : ["<studentid>","<studentid>","<studentid>"]
+    }
+
+### Changing the mentor for Specific student 
+
+This API endpoint allows you to Change the mentor for Specific student .
+
+**URL:** https://assignmentor-iv89.onrender.com/student/:studentid/assignmentor/:mentorid
+
+**Method:** PUT
+
+###  Api TO Show students in particular Mentor
+
+This API endpoint Allows you to Show students in particular Mentor
+
+**URL:** https://assignmentor-iv89.onrender.com/mentors/:mentorId/students
+
+**Method:** GET
+
+### Api To show previousMentor for particular student
+
+This API endpoint allows you to show previousMentor for particular student.
+
+**URL:** https://assignmentor-iv89.onrender.com//pmentors/:studentid/prevmentors
+
+**Method:** GET
+
+
+
+---
